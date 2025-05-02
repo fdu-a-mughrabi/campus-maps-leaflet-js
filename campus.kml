@@ -161,7 +161,13 @@
       <name>Buildings</name>
       <Placemark>
         <name>1. Bancroft Hall</name>
-        <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2019/11/bancroft-hall.jpg" height="200" width="auto" /><br><br>Located on River Road, Bancroft Hall is the headquarters of the Peter Sammartino School of Education. The Metropolitan Campus offices of FDU Information Systems and Technology are also located in Bancroft Hall.]]></description>
+        <styleUrl>#poly-01579B-1200-77</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://www.fdu.edu/wp-content/uploads/2019/11/bancroft-hall.jpg]]></value>
+          </Data>
+        </ExtendedData>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -181,11 +187,11 @@
       </Placemark>
       <Placemark>
         <name>2. Williams Hall</name>
-        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3ADbDBKsR7DPj0vJz-bQ1siwOYQKNUs-uTUoQO_WtdhzDiQGOQ5eycM3lbuGdyCLPf9k8-FKUr6fk3bJHq0OZB1GQL2QMy3AGN5_hWpiHBWXezO_WB4LXZx-C4F31gI4tpbMwBu12qCxmy8rfxYh-QXAvEOQbgnn0-kLBFvi8O0n1s5uCR8-XaAFxlk4H_QnVMSXZ7yOau8aGuolhbh8NUNBke7gfrdcAQEKASciPA2MNOJYLOi24fncmcTl0HGM?authuser=0&fife=s16383" height="200" width="auto" /><br><br>School of Psychology]]></description>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2021/05/51162693899_d238d77290_o-scaled.jpg" height="200" width="auto" /><br><br>Williams Hall is the home of the School of Psychology and Counseling, which includes a nationally recognized and highly selective PhD in Clinical Psychology program, as well as FDU’s PsyD in School Psychology program.]]></description>
         <styleUrl>#poly-01579B-1200-77</styleUrl>
         <ExtendedData>
           <Data name="gx_media_links">
-            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3ADbDBKsR7DPj0vJz-bQ1siwOYQKNUs-uTUoQO_WtdhzDiQGOQ5eycM3lbuGdyCLPf9k8-FKUr6fk3bJHq0OZB1GQL2QMy3AGN5_hWpiHBWXezO_WB4LXZx-C4F31gI4tpbMwBu12qCxmy8rfxYh-QXAvEOQbgnn0-kLBFvi8O0n1s5uCR8-XaAFxlk4H_QnVMSXZ7yOau8aGuolhbh8NUNBke7gfrdcAQEKASciPA2MNOJYLOi24fncmcTl0HGM?authuser=0&fife=s16383]]></value>
+            <value><![CDATA[https://www.fdu.edu/wp-content/uploads/2021/05/51162693899_d238d77290_o-scaled.jpg]]></value>
           </Data>
         </ExtendedData>
         <Polygon>
@@ -206,6 +212,12 @@
       <Placemark>
         <name>3. Fitness Center</name>
         <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2020/04/46813960634_f5ae867419_k.jpg" height="200" width="auto" /><br><br>Located on the Teaneck side of campus, The FDU Metro Fitness Center provides students a wonderful, on-campus resource to recreate and stay fit.  The facility features a full-length basketball/volleyball/badminton court, group exercise studio, and a cardio machine room.  In addition, we have dedicated free weight and selectorized weight rooms, a lounge area, pool and ping-pong tables, a dedicated prayer/meditation room, and locker rooms with showers and day lockers.  We offer regularly scheduled intramural activities and our staff is more than happy to provide guidance and instruction to help you make the most of our equipment and facility.]]></description>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://www.fdu.edu/wp-content/uploads/2020/04/46813960634_f5ae867419_k.jpg]]></value>
+          </Data>
+        </ExtendedData>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -234,6 +246,12 @@
       <Placemark>
         <name>4. Northpointe Residence Hall</name>
         <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2020/04/47586084402_9c5b788a67_k.jpg" height="200" width="auto" /><br><br>The newest Metropolitan Campus residence hall is Northpointe, overlooking green lawns and the Hackensack River at the north end of the Teaneck side of the campus. This 300-student residence hall features spacious rooms each with two beds, bathroom and microwave/refrigerator capability. Each floor has a lounge, laundry room and vending area.]]></description>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://www.fdu.edu/wp-content/uploads/2020/04/47586084402_9c5b788a67_k.jpg]]></value>
+          </Data>
+        </ExtendedData>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -269,8 +287,14 @@
         </Polygon>
       </Placemark>
       <Placemark>
-        <name>5. Robinson Hall</name>
+        <name>5. Robison Hall</name>
         <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2020/04/46622109085_5e3edcb2c2_k.jpg" height="200" width="auto" /><br><br>]]></description>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://www.fdu.edu/wp-content/uploads/2020/04/46622109085_5e3edcb2c2_k.jpg]]></value>
+          </Data>
+        </ExtendedData>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -289,6 +313,12 @@
       <Placemark>
         <name>6. Robinson Hall Annex</name>
         <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2021/05/51161245757_a32a43bc00_o-scaled.jpg" height="200" width="auto" /><br><br>]]></description>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://www.fdu.edu/wp-content/uploads/2021/05/51161245757_a32a43bc00_o-scaled.jpg]]></value>
+          </Data>
+        </ExtendedData>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -307,6 +337,12 @@
       <Placemark>
         <name>7. Muscarelle Center</name>
         <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2021/05/51163014380_8777ce4d5a_o-scaled.jpg" height="200" width="auto" /><br><br>The Muscarelle Center for Building Construction Studies houses Gildart Haase School of Computer Sciences and Engineering. High-tech laboratories, computer resources, classrooms, and faculty offices for Engineering and Engineering Technology are also located in this building.]]></description>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://www.fdu.edu/wp-content/uploads/2021/05/51163014380_8777ce4d5a_o-scaled.jpg]]></value>
+          </Data>
+        </ExtendedData>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -326,8 +362,13 @@
       </Placemark>
       <Placemark>
         <name>8. Kron Administration Building</name>
-        <description><![CDATA[']]></description>
         <styleUrl>#poly-01579B-1200-77</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2020/04/47537624711_0d00136b8e_k.jpg" height="200" width="auto" /><br><br>]]></description>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://www.fdu.edu/wp-content/uploads/2020/04/47537624711_0d00136b8e_k.jpg]]></value>
+          </Data>
+        </ExtendedData>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -358,6 +399,12 @@
       <Placemark>
         <name>9. University Hall</name>
         <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2021/05/51162151263_23e5f78203_o-scaled.jpg" height="200" width="auto" /><br><br>]]></description>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://www.fdu.edu/wp-content/uploads/2021/05/51162151263_23e5f78203_o-scaled.jpg]]></value>
+          </Data>
+        </ExtendedData>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -380,6 +427,12 @@
       <Placemark>
         <name>10. Alumni Hall</name>
         <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2020/04/49496972281_0051525d40_k.jpg" height="200" width="auto" /><br><br>]]></description>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://www.fdu.edu/wp-content/uploads/2020/04/49496972281_0051525d40_k.jpg]]></value>
+          </Data>
+        </ExtendedData>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -404,6 +457,8 @@
       <Placemark>
         <name>11. Metropolitan Campus Library</name>
         <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2021/05/51161246422_e30230c5b6_o-scaled.jpg" height="200" width="auto" alt="Metropolitan Campus Library Image"/><br><br>The Metropolitan Campus Library is on the Teaneck side of the Metropolitan Campus and offers comfortable spaces for students to work. It houses approximately 154,000 print volumes, periodicals, DVDs, audiobooks, microforms, and special collections. The FDU Online Library provides access to 190+ subscription databases containing over 20,000 full-text journals, more than 145,000 e-books, and a streaming video collection. Most resources within the FDU Online Library are available 24/7, both on campus and remotely. The exterior of the library features a relief by noted artist William Zorach. This main library of the Metropolitan Campus was formerly known as the Giovatto Library, and before that, Weiner Library.]]>
+        </description>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -426,6 +481,8 @@
       <Placemark>
         <name>12. Becton Hall</name>
         <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2021/05/51162150468_1a9069ec4e_o-scaled.jpg" height="200" width="auto" alt="Becton Hall Image"/>]]>
+        </description>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -498,6 +555,8 @@
       <Placemark>
         <name>23. Public Safety Office</name>
         <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2021/05/51162150933_558572d6ae_o-scaled.jpg" height="200" width="auto" alt="Becton Hall Image"/><br/><br/>Located on Lone Pine Lane off River Road, The Department of Public Safety provides protective services to the University community twenty-four hours a day, seven days a week. Public Safety strives to reduce and limit crime and encourages you to report any safety concerns, incidents or suspicious activity to their department.]]>
+        </description>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -516,6 +575,8 @@
       <Placemark>
         <name>24. Interfaith Chapel</name>
         <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2021/05/51162693259_f7071e713c_o-scaled.jpg" height="200" width="auto" alt="Interfaith Chapel Image"/><br/><br/>Located on River Road, the interfaith chapel houses the campus ministry program.  Campus ministries’ goal is to advocate for the spiritual wellness of the University community, to provide for the coordination of formal and informal religious services for a diverse student, faculty, and staff body, and to coordinate all religious activities on campus.]]>
+        </description>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -534,6 +595,8 @@
       <Placemark>
         <name>25. International Student Services</name>
         <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2021/05/51161903291_20912eb351_o-scaled.jpg" height="200" width="auto" alt="International Student Services Image"/><br/><br/>Located on River Road, The Office of International Student Services (ISS) serves currently enrolled and recently graduated international students. ISS works with students to provide them access to academic, co-curricular, and professional opportunities as well as providing one-on-one advisement to ensure that students are successful in maintaining proper immigration status.]]>
+        </description>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -552,6 +615,8 @@
       <Placemark>
         <name>26. EOF Office</name>
         <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2021/05/51163013940_626ea61bf6_o-scaled.jpg" height="200" width="auto" alt="EOF Office Image"/><br/><br/>Located off of River Road, The Educational Opportunity Fund (EOF) is a University- and state-sponsored program.  EOF offers academic and financial assistance to qualifying New Jersey residents from backgrounds of educational and economic need who demonstrate strong evidence of the commitment, motivation, and potential for scholastic success, as well as interest in completing a Fairleigh Dickinson University education.]]>
+        </description>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -650,6 +715,8 @@
       <Placemark>
         <name>31. Dean of Students</name>
         <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2021/05/51162693159_e0836e1b36_o-scaled.jpg" height="200" width="auto" alt="Dean of Students Office Image"/><br/><br/>Located off of River Road, The Office of the Dean of Students serves as an advocate for students and is responsible for overall coordination of disciplinary matters, student government advisement, student handbook, orientation, honors convocation, and commencement. The Dean of Students Office is available to respond to all aspects of students’ needs and should be used to mediate and resolve difficulties.]]>
+        </description>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -672,6 +739,10 @@
         <name>32. Greg Olsen Student Union
 </name>
         <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2021/05/51161903191_e7d4ee2837_o-scaled.jpg" height="200" width="auto" alt="Greg Olsen Student Union Image"/><br/><br/>The Student Union, recently renamed in honor of FDU alumnus Greg Olsen, includes the Office of Student Life, Student Health Services, the Knight Club and the Multipurpose Room, all located on the main floor. Several student organization offices (The Equinox, Militis, the MultiCultural Council and Student Organizations Office and 92Q-FM Radio Station), the Rutherford Room, Metro Lounge and student mailboxes are located on the lower level. The Dish dining hall is located on the third floor of the building.
+
+The Knight Club is a recreational facility that currently houses board games, pool tables, a ping-pong table, seating areas and a large-screen projection DVD/VCR system with cable television. The club is host to a wide variety of programs that are presented for the University community to enjoy. Events include music, interactive entertainment, films and movies, speakers and much more. The Kron Lounge, Metro Lounge and Student Union Conference Room are available for meetings and small events. The Rutherford Room and the Multipurpose Room may be reserved for lectures and special dining events.]]>
+        </description>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -694,6 +765,8 @@
       <Placemark>
         <name>33 - 38. Linden Court Residence Halls</name>
         <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2020/04/46622102595_60eb4b189d_k.jpg" height="200" width="auto" alt="The Lindens Image"/><br/><br/>The Lindens are comprised of eight buildings with three co-ed floors of same-gender suites each consisting of three (3) double occupancy rooms totaling around 60 residents per building. Each suite common area has a shared bathroom.]]>
+        </description>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -730,6 +803,8 @@
       <Placemark>
         <name>39 - 40. Linden Court Residence Halls</name>
         <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2020/04/46622102595_60eb4b189d_k.jpg" height="200" width="auto" alt="The Lindens Image"/><br/><br/>The Lindens are comprised of eight buildings with three co-ed floors of same-gender suites each consisting of three (3) double occupancy rooms totaling around 60 residents per building. Each suite common area has a shared bathroom.]]>
+        </description>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -752,6 +827,8 @@
       <Placemark>
         <name>41. Knight Spot</name>
         <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2021/05/51162150433_1623d1110f_o-scaled.jpg" height="200" width="auto" alt="Knight Spot Image"/>]]>
+        </description>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -918,6 +995,22 @@
       <Placemark>
         <name>50. Bogota Savings Bank Center</name>
         <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2021/01/PinnacleDinner019-10-22-001-scaled.jpg" height="200" width="auto" alt="Bogota Savings Bank Center Image"/><br/><br/>With its distinctive tent-like roof and its riverside setting, the Bogota Savings Bank Center is perhaps FDU’s best-known building to the wider Bergen County community. The Bogota Savings Bank Center is on the Hackensack side of the campus, and is the primary athletic and recreational facility for the Metropolitan Campus.
+
+The building consists of three key areas of operation and function: 
+<ul>
+<li>
+Four playing courts which can be configured for any combination of basketball, tennis or volleyball games.  The two central courts are wood. The non-wood floor area of the main arena are surfaced with synthetic material which provides a quality playing surface for a variety of physical activity
+</li>
+<li>
+A six-lane, 200-meter track encircling the main arena playing courts and a long jump pit. 
+</li>
+<li>
+The Stratis Lounge overlooking the main arena from the mezzanine level, featuring a reception area and seating for up to 150.
+</li>
+</ul>
+]]>
+        </description>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -942,6 +1035,14 @@
       <Placemark>
         <name>51. Dickinson Hall</name>
         <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2020/04/46622102595_60eb4b189d_k.jpg" height="200" width="auto" alt="Dickinson Hall Image"/><br/><br/>Dickinson Hall features major classroom, laboratory, office and auditorium space. Dickinson Hall houses the Silberman College of Business, Henry P. Becton School of Nursing and Allied Health, and International School of Hospitality and Tourism Management. It also contains the Office of the President and other key FDU administrative offices.
+
+Dickinson Hall has three microcomputer laboratories for student use on the second floor. The Business Research Library is located on the first floor, as are a small cafe and vending machines. Undergraduate Admissions is on the third floor.
+
+<strong>Wilson Auditorium</strong> is in the southeast corner of the building, nearest the Rothman Center, and has its own entrance to the building.
+
+The main first-floor hallway of Dickinson is <strong>Heritage Hall</strong>, where plaques commemorate individuals of distinguished contribution throughout the University’s history.]]>
+</description>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1051,6 +1152,10 @@
       <Placemark>
         <name>54a. Naimoli Family Baseball Complex</name>
         <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <description><![CDATA[<img src="https://www.fdu.edu/wp-content/uploads/2021/01/BSB019vMSM-001-scaled.jpg" height="200" width="auto" alt="Naimoli Family Baseball Complex Image"/><br/><br/>The Naimoli Baseball Complex was opened in 2011. The complex is named for one of FDU’s devoted alumnus and former Trustee, Vince Naimoli (’64).
+        
+Naimoli’s impact on the baseball world is expansive as he was responsible for bringing Major League Baseball to the Tampa, Florida, region, founding the Tampa Bay Rays and serving as managing general partner and CEO for the franchise’s first decade.]]>
+</description>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>

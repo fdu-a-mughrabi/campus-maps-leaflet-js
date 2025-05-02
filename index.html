@@ -8,350 +8,55 @@
 
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <!-- <link rel="stylesheet" href="./styles.css"> -->
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        #map {
-            width: 100%;
-            height: 100vh;
-        }
-
-        .map-title {
-            position: absolute;
-            top: 10px;
-            left: 50px;
-            z-index: 1000;
-            background: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            font-family: Arial, sans-serif;
-            font-weight: bold;
-            font-size: .8rem;
-        }
-
-        .map-controls {
-            position: absolute;
-            top: 50px;
-            left: 50px;
-            z-index: 1000;
-            background: white;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            font-family: Arial, sans-serif;
-            max-height: 80vh;
-            overflow-y: auto;
-            max-width: 300px;
-        }
-
-        .control-group {
-            margin-bottom: 10px;
-        }
-
-        .control-label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            font-size: .75rem;
-        }
-
-        .toggle-switch {
-            position: relative;
-            display: inline-block;
-            width: 50px;
-            height: 24px;
-        }
-
-        .toggle-switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
-
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            transition: .4s;
-            border-radius: 24px;
-        }
-
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 16px;
-            width: 16px;
-            left: 4px;
-            bottom: 4px;
-            background-color: white;
-            transition: .4s;
-            border-radius: 50%;
-        }
-
-        input:checked+.slider {
-            background-color: #2196F3;
-        }
-
-        input:checked+.slider:before {
-            transform: translateX(26px);
-        }
-
-        #location-select {
-            width: 100%;
-            font-size: .70rem;
-            padding: 8px;
-            margin-top: 10px;
-            border-radius: 4px;
-            border: 1px solid #ddd;
-        }
-
-        .search-container {
-            margin-bottom: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- KML parser -->
+    <script src="https://unpkg.com/leaflet-omnivore@0.3.4/leaflet-omnivore.min.js"></script>
+    <script async defer src="./script.js"></script>
 </head>
 
 <body>
-    <div id="map"></div>
-    <div class="map-title">FDU Metropolitan Campus Map</div>
-    <div class="map-controls">
-        <div class="search-container">
-            <div class="control-label">Jump to Location</div>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="https://www.fdu.edu/wp-content/uploads/2023/07/Graphic-Standards-Guide_FDU-Logo-Plain-2C-Update23-300x100.jpg"
+                alt="FDU Logo" width="40" />
+        </div>
+        <div class="nav-location-select">
             <select id="location-select">
                 <option value="">Select a location...</option>
             </select>
         </div>
+    </nav>
+    <div id="map"></div>
+    <!-- <div class="map-title">FDU Metropolitan Campus Map</div>
+    <div class="map-controls">
+        <div class="search-container">
+            <select id="location-select">
+                <option value="" selected disabled>Pick a location...</option>
+            </select>
+        </div>
+    </div>
+    </div> -->
+    <div class="floating-controls">
         <div class="control-group">
-            <span class="control-label">Map Layers</span>
             <label class="toggle-switch">
-                <input type="checkbox" id="parking-toggle" checked>
+                <input type="checkbox" id="parking-toggle">
                 <span class="slider"></span>
             </label>
             <span>Parking</span>
         </div>
         <div class="control-group">
             <label class="toggle-switch">
-                <input type="checkbox" id="dining-toggle" checked>
+                <input type="checkbox" id="dining-toggle">
                 <span class="slider"></span>
             </label>
             <span>Dining</span>
         </div>
     </div>
 
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <!-- KML parser -->
-    <script src="https://unpkg.com/leaflet-omnivore@0.3.4/leaflet-omnivore.min.js"></script>
-
-    <script>
-        // Initialize the map centered on the campus
-        let map = L.map('map').setView([40.897, -74.03], 16);
-
-        // Add OpenStreetMap base layer
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        // Create layer groups for different feature types
-        let buildingsLayer = L.layerGroup();
-        let parkingLayer = L.layerGroup();
-        let diningLayer = L.layerGroup();
-
-        // Store all features with their names and layers
-        let locationFeatures = [];
-        // console.log(locationFeatures)
 
 
-        // Custom layer to handle KML features
-        let customLayer = L.geoJSON(null, {
-            style: function (feature) {
-                // Style for polygons (buildings)
-                if (feature.geometry.type === 'Polygon' || feature.geometry.type === 'MultiPolygon') {
-                    return {
-                        fillColor: '#01579B',
-                        fillOpacity: 0.5,
-                        color: '#01579B',
-                        weight: 2,
-                        opacity: 0.7
-                    };
-                }
-                // Default style for other features
-                return {};
-            },
-            pointToLayer: function (feature, latlng) {
-                // Style for parking markers
-                if (feature.properties.styleUrl && feature.properties.styleUrl.includes('880E4F')) {
-                    return L.circleMarker(latlng, {
-                        radius: 8,
-                        fillColor: "#880E4F",
-                        color: "#000",
-                        weight: 1,
-                        opacity: 1,
-                        fillOpacity: 0.8
-                    });
-                }
-                // Style for dining markers
-                if (feature.properties.styleUrl && feature.properties.styleUrl.includes('0288D1')) {
-                    return L.circleMarker(latlng, {
-                        radius: 8,
-                        fillColor: "#0288D1",
-                        color: "#000",
-                        weight: 1,
-                        opacity: 1,
-                        fillOpacity: 0.8
-                    });
-                }
-                // Default marker
-                return L.marker(latlng);
-            },
-            onEachFeature: function (feature, layer) {
-                // Use the feature's name if available, otherwise assign a default name
-                let name = feature.properties?.name || 'Unnamed Location';
-
-                // Store the feature for the dropdown
-                locationFeatures.push({
-                    name: name,
-                    layer: layer
-                });
-
-                // Add popup with more information
-                let popupContent = '<b>' + name + '</b>';
-                if (feature.properties?.description) {
-                    popupContent += '<br>' + feature.properties.description;
-                }
-                layer.bindPopup(popupContent);
-
-                // Add hover effects for polygons
-                if (feature.geometry.type === 'Polygon' || feature.geometry.type === 'MultiPolygon') {
-                    layer.on('mouseover', function () {
-                        this.setStyle({
-                            fillOpacity: 0.8,
-                            weight: 3
-                        });
-                    });
-                    layer.on('mouseout', function () {
-                        this.setStyle({
-                            fillOpacity: 0.5,
-                            weight: 2
-                        });
-                    });
-
-                    // Add to buildings layer
-                    buildingsLayer.addLayer(layer);
-                }
-                // Add to parking layer
-                else if (feature.properties.styleUrl && feature.properties.styleUrl.includes('880E4F')) {
-                    parkingLayer.addLayer(layer);
-                }
-                // Add to dining layer
-                else if (feature.properties.styleUrl && feature.properties.styleUrl.includes('0288D1')) {
-                    diningLayer.addLayer(layer);
-                }
-                // Default to buildings layer
-                else {
-                    buildingsLayer.addLayer(layer);
-                }
-            }
-        });
-
-        // Function to sort locations (numbers first, then letters)
-        function sortLocations(a, b) {
-            // Extract the number part if it exists (e.g., "1. Bancroft Hall" → 1)
-            const numA = parseInt(a.name.match(/^\d+/)?.[0] || Infinity);
-            const numB = parseInt(b.name.match(/^\d+/)?.[0] || Infinity);
-
-            // If both have numbers, sort numerically
-            if (!isNaN(numA)) {
-                if (!isNaN(numB)) {
-                    return numA - numB;
-                }
-                return -1; // Numbers come before non-numbers
-            }
-            if (!isNaN(numB)) return 1;
-
-            // Otherwise sort alphabetically
-            return a.name.localeCompare(b.name);
-        }
-
-        // Load the KML file
-        omnivore.kml('campus.kml', null, customLayer)
-            .on('ready', function () {
-                console.log(customLayer)
-                // Add all layers to map initially
-                buildingsLayer.addTo(map);
-                parkingLayer.addTo(map);
-                diningLayer.addTo(map);
-
-                // Sort locations (numbers first, then alphabetically)
-                locationFeatures.sort(sortLocations);
-
-                // Populate the dropdown
-                const select = document.getElementById('location-select');
-                locationFeatures.forEach(feature => {
-                    const option = document.createElement('option');
-                    option.value = feature.name;
-                    option.textContent = feature.name;
-                    select.appendChild(option);
-                });
-
-                // Fit bounds to show all features
-                map.fitBounds(this.getBounds());
-            });
-
-        // Toggle controls
-        document.getElementById('parking-toggle').addEventListener('change', function (e) {
-            if (e.target.checked) {
-                parkingLayer.addTo(map);
-            } else {
-                map.removeLayer(parkingLayer);
-            }
-        });
-
-        document.getElementById('dining-toggle').addEventListener('change', function (e) {
-            if (e.target.checked) {
-                diningLayer.addTo(map);
-            } else {
-                map.removeLayer(diningLayer);
-            }
-        });
-
-        // Location selection handler
-        document.getElementById('location-select').addEventListener('change', function (e) {
-            const selectedName = e.target.value;
-            if (!selectedName) return;
-
-            // Find the selected feature
-            const selectedFeature = locationFeatures.find(f => f.name === selectedName);
-            if (selectedFeature) {
-                // Check if the feature is a point or a polygon
-                if (selectedFeature.layer.getBounds) {
-                    // For polygons, use fitBounds with padding
-                    map.fitBounds(selectedFeature.layer.getBounds(), {
-                        padding: [50, 50], // Add 50px padding around the feature
-                        maxZoom: 18        // Limit how far we zoom in
-                    });
-                } else {
-                    // For points, use setView to center the map
-                    const latLng = selectedFeature.layer.getLatLng();
-                    map.setView(latLng, 18, {
-                        animate: true
-                    }); // Zoom to level 18
-                }
-
-                // Open the popup for the selected feature
-                selectedFeature.layer.openPopup();
-            }
-        });
-    </script>
 </body>
 
 </html>
